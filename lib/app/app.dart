@@ -1,4 +1,4 @@
-import 'package:docdoc_app/core/theme/app_theme_data.dart';
+import '../core/theme/app_theme_data.dart';
 import 'package:flutter/material.dart';
 
 class DocDocApp extends StatelessWidget {
