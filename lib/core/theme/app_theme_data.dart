@@ -1,4 +1,4 @@
-import '../constants/app_strings.dart';
+import '../../helpers/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppThemeData {
