@@ -23,13 +23,16 @@ class OnBoardingPage extends StatelessWidget {
               SizedBox(height: context.h * 0.041),
               ImageAndTitleWidget(),
               SizedBox(height: context.h * 0.018),
-              Text(
-                "manage_and_schedule_description".tr(),
-                textAlign: .center,
-                maxLines: 2,
-                overflow: .ellipsis,
-                style: context.textTheme.labelLarge?.copyWith(
-                  color: AppColors.body,
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: context.h * .032),
+                child: Text(
+                  "manage_and_schedule_description".tr(),
+                  textAlign: .center,
+                  maxLines: 2,
+                  overflow: .ellipsis,
+                  style: context.textTheme.labelLarge?.copyWith(
+                    color: AppColors.body,
+                  ),
                 ),
               ),
               SizedBox(height: context.h * 0.031),
