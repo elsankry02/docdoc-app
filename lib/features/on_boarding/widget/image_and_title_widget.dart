@@ -25,7 +25,7 @@ class ImageAndTitleWidget extends StatelessWidget {
         ),
         Text(
           textAlign: .center,
-          context.tr("best_doctor_appointment_app"),
+          "best_doctor_appointment_app".tr(),
           style: context.textTheme.headlineLarge?.copyWith(
             color: AppColors.primary100,
             fontWeight: FontWeight.w700,
