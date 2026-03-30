@@ -1,5 +1,8 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:docdoc_app/helpers/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
+@RoutePage()
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
@@ -10,6 +13,10 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Text('Splash Page', style: context.textTheme.headlineMedium),
+      ),
+    );
   }
 }
