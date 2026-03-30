@@ -1,7 +1,16 @@
+import 'package:docdoc_app/app/app.dart';
+import 'package:docdoc_app/app/env.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import 'app/app.dart';
-
-void main() {
-  runApp(const DocDocApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(
+    EasyLocalization(
+      path: localizationPath,
+      supportedLocales: [Locale('ar'), Locale('en')],
+      child: const DocDocApp(),
+    ),
+  );
 }

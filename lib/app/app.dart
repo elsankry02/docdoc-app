@@ -1,4 +1,5 @@
 import 'package:docdoc_app/core/routing/router.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../core/theme/app_theme_data.dart';
@@ -9,8 +10,11 @@ class DocDocApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: router.config(),
       debugShowCheckedModeBanner: false,
+      routerConfig: router.config(),
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       darkTheme: AppThemeData.darkTheme,
       theme: AppThemeData.lightTheme,
       themeMode: .light,

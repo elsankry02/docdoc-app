@@ -1,3 +1,1 @@
-// BasUrl
-
-// final baseUrl = "";
+final localizationPath = "assets/localization";
