@@ -1,6 +1,6 @@
-import 'package:docdoc_app/core/theme/app_colors.dart';
-import 'package:docdoc_app/helpers/constants/app_svgs.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../helpers/constants/app_svgs.dart';
+import '../../../helpers/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

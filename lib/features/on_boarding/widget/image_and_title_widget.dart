@@ -1,6 +1,6 @@
-import 'package:docdoc_app/core/theme/app_colors.dart';
-import 'package:docdoc_app/helpers/constants/app_images.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../helpers/constants/app_images.dart';
+import '../../../helpers/extensions/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

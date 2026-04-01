@@ -1,5 +1,5 @@
-import 'package:docdoc_app/app/app.dart';
-import 'package:docdoc_app/app/env.dart';
+import 'app/app.dart';
+import 'app/env.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import '../../../helpers/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()

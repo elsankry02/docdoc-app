@@ -1,9 +1,9 @@
 import 'package:auto_route/annotations.dart';
-import 'package:docdoc_app/core/theme/app_colors.dart';
-import 'package:docdoc_app/core/widget/default_primary_btn.dart';
-import 'package:docdoc_app/features/on_boarding/widget/appbar_logo_widget.dart';
-import 'package:docdoc_app/features/on_boarding/widget/image_and_title_widget.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../core/widget/default_primary_btn.dart';
+import '../widget/appbar_logo_widget.dart';
+import '../widget/image_and_title_widget.dart';
+import '../../../helpers/extensions/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:docdoc_app/core/routing/routes.dart';
-import 'package:docdoc_app/features/auth/ui/sign_in/ui/view/signin_page.dart';
-import 'package:docdoc_app/features/auth/ui/sign_up/ui/view/signup_page.dart';
-import 'package:docdoc_app/features/on_boarding/view/on_boarding_page.dart';
-import 'package:docdoc_app/features/splash/view/splash_page.dart';
+import 'routes.dart';
+import '../../features/auth/ui/sign_in/ui/view/signin_page.dart';
+import '../../features/auth/ui/sign_up/ui/view/signup_page.dart';
+import '../../features/on_boarding/view/on_boarding_page.dart';
+import '../../features/splash/view/splash_page.dart';
 
 part 'router.gr.dart';
 
