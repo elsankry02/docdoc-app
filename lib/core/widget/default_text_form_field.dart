@@ -2,7 +2,7 @@ import 'package:docdoc_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class DefaultTextFormField extends StatelessWidget {
-  final String labelText;
+  final String hintText;
   final String? prefixText, suffixText;
   final bool obscureText, autofocus;
   final bool? filled;
@@ -10,7 +10,7 @@ class DefaultTextFormField extends StatelessWidget {
   final AutovalidateMode? autovalidateMode;
   final TextInputType? keyboardType;
   final EdgeInsetsGeometry? contentPadding;
-  final TextStyle? labelStyle, suffixStyle, style, prefixStyle;
+  final TextStyle? suffixStyle, hintStyle, style, prefixStyle;
   final int? maxLength;
   final Widget? prefixIcon, suffixIcon;
   final TextEditingController? controller;
@@ -20,17 +20,13 @@ class DefaultTextFormField extends StatelessWidget {
   final Color enabledBorderColor, focusedBorderColor;
   const DefaultTextFormField({
     super.key,
-    this.labelText = "enter your name",
+
     this.controller,
     this.keyboardType,
     this.validator,
     this.onChanged,
     this.autovalidateMode,
-    this.labelStyle = const TextStyle(
-      color: AppColors.grey50,
-      fontSize: 14,
-      fontWeight: FontWeight.w500,
-    ),
+
     this.onFieldSubmitted,
     this.maxLength,
     this.cursorColor,
@@ -49,7 +45,7 @@ class DefaultTextFormField extends StatelessWidget {
     this.suffixStyle,
     this.prefixStyle,
     this.style = const TextStyle(
-      color: AppColors.grey50,
+      color: AppColors.grey100,
       fontSize: 14,
       fontWeight: FontWeight.w500,
     ),
@@ -58,6 +54,12 @@ class DefaultTextFormField extends StatelessWidget {
       start: 20,
       bottom: 17,
       top: 17,
+    ),
+    this.hintText = "Email",
+    this.hintStyle = const TextStyle(
+      color: AppColors.grey50,
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
     ),
   });
   @override
@@ -87,8 +89,8 @@ class DefaultTextFormField extends StatelessWidget {
         suffixIconColor: suffixIconColor,
         suffixStyle: suffixStyle,
         suffixText: suffixText,
-        labelText: labelText,
-        labelStyle: labelStyle,
+        hintText: hintText,
+        hintStyle: hintStyle,
         enabledBorder: outlineInputBorder(
           color: enabledBorderColor,
           radius: radius,

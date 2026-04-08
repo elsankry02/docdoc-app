@@ -1,12 +1,84 @@
 import 'package:auto_route/annotations.dart';
+import 'package:docdoc_app/core/theme/app_colors.dart';
+import 'package:docdoc_app/core/widget/default_auth_header.dart';
+import 'package:docdoc_app/core/widget/default_primary_btn.dart';
+import 'package:docdoc_app/core/widget/default_text_form_field.dart';
+import 'package:docdoc_app/features/auth/ui/sign_in/ui/widget/remember_me_and_forgot_password_widget.dart';
+import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
-class SigninPage extends StatelessWidget {
+class SigninPage extends StatefulWidget {
   const SigninPage({super.key});
 
   @override
+  State<SigninPage> createState() => _SigninPageState();
+}
+
+class _SigninPageState extends State<SigninPage> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  bool isActive = false;
+  @override
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('LogIn Page')));
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: context.h * 0.030),
+            child: Column(
+              crossAxisAlignment: .start,
+              children: [
+                SizedBox(height: context.h * 0.050),
+                DefaultAuthHeader(
+                  title: "welcome_back".tr(),
+                  subTitle: "welcome_back_message".tr(),
+                ),
+                SizedBox(height: context.h * 0.036),
+                //  Email
+                DefaultTextFormField(
+                  hintText: "email".tr(),
+                  controller: emailController,
+                ),
+                SizedBox(height: context.h * 0.016),
+                // Password
+                DefaultTextFormField(
+                  hintText: "password".tr(),
+                  controller: passwordController,
+                ),
+                SizedBox(height: context.h * 0.020),
+                // RememberMe And Forgot Password
+                RememberMeAndForgotPasswordWidget(
+                  value: isActive,
+                  onChanged: (value) {
+                    setState(() {
+                      isActive = value!;
+                    });
+                  },
+                ),
+                SizedBox(height: context.h * 0.040),
+                //  Log in
+                DefaultPrimaryBtn(
+                  title: "login".tr(),
+                  borderRadius: BorderRadius.circular(16),
+                  textStyle: context.textTheme.titleMedium?.copyWith(
+                    color: AppColors.white,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

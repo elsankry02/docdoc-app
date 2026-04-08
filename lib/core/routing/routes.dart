@@ -3,4 +3,5 @@ abstract class Routes {
   static const onBoarding = '/onboarding';
   static const signIn = '/signin';
   static const signUp = '/signup';
+  static const forgetPassword = '/forgetPassword';
 }

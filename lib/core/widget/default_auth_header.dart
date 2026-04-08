@@ -14,6 +14,7 @@ class DefaultAuthHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: .start,
       spacing: 8,
       children: [
         Text(
