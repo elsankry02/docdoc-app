@@ -1,5 +1,5 @@
-import 'package:docdoc_app/core/theme/app_colors.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import '../theme/app_colors.dart';
+import '../../helpers/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 
 class DefaultAuthHeader extends StatelessWidget {
