@@ -11,6 +11,22 @@
 part of 'router.dart';
 
 /// generated route for
+/// [ForgetPasswordPage]
+class ForgetPasswordRoute extends PageRouteInfo<void> {
+  const ForgetPasswordRoute({List<PageRouteInfo>? children})
+    : super(ForgetPasswordRoute.name, initialChildren: children);
+
+  static const String name = 'ForgetPasswordRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ForgetPasswordPage();
+    },
+  );
+}
+
+/// generated route for
 /// [OnBoardingPage]
 class OnBoardingRoute extends PageRouteInfo<void> {
   const OnBoardingRoute({List<PageRouteInfo>? children})
