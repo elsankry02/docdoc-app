@@ -1,16 +1,16 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../../core/routing/router.dart';
 import '../../../../../core/theme/app_colors.dart';
 import '../../../../../core/widget/default_auth_header.dart';
 import '../../../../../core/widget/default_primary_btn.dart';
 import '../../../../../core/widget/default_text_form_field.dart';
+import '../../../../../helpers/extensions/extensions.dart';
 import '../widget/auth_rich_text_widget.dart';
 import '../widget/forgot_password_widget.dart';
 import '../widget/terms_and_privacy_widget.dart';
-import '../../../../../helpers/extensions/extensions.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 @RoutePage()
 class SigninPage extends StatefulWidget {
@@ -65,10 +65,8 @@ class _SigninPageState extends State<SigninPage> {
                       obscureText = !obscureText;
                     });
                   },
-                  icon: FaIcon(
-                    obscureText
-                        ? FontAwesomeIcons.eyeSlash
-                        : FontAwesomeIcons.eye,
+                  icon: Icon(
+                    obscureText ? Icons.visibility_off : Icons.visibility,
                     size: 24,
                     color: AppColors.primary100,
                   ),
