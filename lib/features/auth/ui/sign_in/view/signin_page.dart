@@ -1,16 +1,16 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+
 import '../../../../../core/routing/router.dart';
 import '../../../../../core/theme/app_colors.dart';
 import '../../../../../core/widget/default_auth_header.dart';
 import '../../../../../core/widget/default_primary_btn.dart';
 import '../../../../../core/widget/default_text_form_field.dart';
-import '../widget/auth_rich_text_widget.dart';
-import '../widget/or_sign_in_with_widget.dart';
-import '../widget/remember_me_and_forgot_password_widget.dart';
-import '../widget/terms_and_privacy_widget.dart';
 import '../../../../../helpers/extensions/extensions.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
+import '../widget/auth_rich_text_widget.dart';
+import '../widget/forgot_password_widget.dart';
+import '../widget/terms_and_privacy_widget.dart';
 
 @RoutePage()
 class SigninPage extends StatefulWidget {
@@ -24,7 +24,7 @@ class _SigninPageState extends State<SigninPage> {
   final formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  bool isActive = false;
+  bool obscureText = true;
   @override
   void dispose() {
     emailController.dispose();
@@ -58,17 +58,23 @@ class _SigninPageState extends State<SigninPage> {
               DefaultTextFormField(
                 hintText: "password".tr(),
                 controller: passwordController,
+                obscureText: obscureText,
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    setState(() {
+                      obscureText = !obscureText;
+                    });
+                  },
+                  icon: Icon(
+                    obscureText ? Icons.visibility_off : Icons.visibility,
+                    size: 24,
+                    color: AppColors.primary100,
+                  ),
+                ),
               ),
               SizedBox(height: context.h * 0.020),
-              // RememberMe And Forgot Password
-              RememberMeAndForgotPasswordWidget(
-                value: isActive,
-                onChanged: (value) {
-                  setState(() {
-                    isActive = value!;
-                  });
-                },
-              ),
+              // Forgot Password
+              ForgotPasswordWidget(),
               SizedBox(height: context.h * 0.040),
               //  Log in
               DefaultPrimaryBtn(
@@ -79,18 +85,15 @@ class _SigninPageState extends State<SigninPage> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              SizedBox(height: context.h * .050),
-              // Or sign in with
-              OrSignInWithWidget(),
-              SizedBox(height: context.h * .050),
+              SizedBox(height: context.h * .030),
               // Terms And Privacy
               TermsAndPrivacyWidget(
                 onTapTermsAndConditions: () {},
                 onTapprivacyPolicy: () {},
               ),
-              SizedBox(height: context.h * .030),
+              SizedBox(height: context.h * .060),
               AuthRichTextWidget(
-                title: "already_have_an_account".tr(),
+                title: "no_account".tr(),
                 subTitle: "sign_up".tr(),
                 onTap: () => context.router.replace(SignUpRoute()),
               ),
