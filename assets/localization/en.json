@@ -14,8 +14,11 @@
   "terms_and_conditions": "Terms & Conditions ",
   "and": "and ",
   "privacy_policy": "Privacy Policy.",
-  "sign_in": "Sign in",
   "already_have_an_account": "Already have an account?",
+  "sign_in": "Sign in",
+  "no_account": "Don’t have an account?",
   "sign_up": "Sign Up",
-  "no_account": "Don’t have an account?"
+  "create_account": "Create Account",
+  "signup_description": "Sign up now and start exploring all that our app has to offer.\nWe're excited to welcome you to our community!",
+  "phone_number": "Your number"
 }
