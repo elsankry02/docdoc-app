@@ -78,7 +78,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 controller: phoneController,
               ),
               SizedBox(height: context.h * 0.040),
-              //  Log in
+              //  create account
               DefaultPrimaryBtn(
                 title: "create_account".tr(),
                 borderRadius: BorderRadius.circular(16),
