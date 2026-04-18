@@ -84,6 +84,7 @@ class _SigninPageState extends State<SigninPage> {
                   color: AppColors.white,
                   fontWeight: FontWeight.w600,
                 ),
+                onTap: () {},
               ),
               SizedBox(height: context.h * .030),
               // Terms And Privacy
