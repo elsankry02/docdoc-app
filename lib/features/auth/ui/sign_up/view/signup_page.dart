@@ -22,11 +22,13 @@ class _SignUpPageState extends State<SignUpPage> {
   final formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final phoneController = TextEditingController();
   bool obscureText = true;
   @override
   void dispose() {
     emailController.dispose();
     passwordController.dispose();
+    phoneController.dispose();
     super.dispose();
   }
 
@@ -73,7 +75,7 @@ class _SignUpPageState extends State<SignUpPage> {
               SizedBox(height: context.h * 0.016),
               DefaultTextFormField(
                 hintText: "phone_number".tr(),
-                controller: emailController,
+                controller: phoneController,
               ),
               SizedBox(height: context.h * 0.040),
               //  Log in
