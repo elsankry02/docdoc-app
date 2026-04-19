@@ -39,7 +39,7 @@ class DefaultTextFormField extends StatelessWidget {
     this.fillColor,
     this.autofocus = false,
     this.enabledBorderColor = AppColors.form,
-    this.focusedBorderColor = AppColors.form,
+    this.focusedBorderColor = AppColors.primary100,
     this.prefixText,
     this.suffixText,
     this.suffixStyle,
@@ -66,7 +66,6 @@ class DefaultTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       style: style,
-
       autovalidateMode: autovalidateMode,
       autofocus: autofocus,
       validator: validator,

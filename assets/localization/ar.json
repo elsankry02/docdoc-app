@@ -8,12 +8,21 @@
   "password": "كلمة المرور",
   "remember_me": "تذكرني",
   "forgot_password": "نسيت كلمة المرور؟",
+  "forgot_password_page": "نسيت كلمة المرور",
   "login": "تسجيل الدخول",
   "or_sign_in_with": "أو سجل الدخول بواسطة",
   "by_logging_you_agree_to_our": " بتسجيل الدخول، فإنك توافق على",
   "terms_and_conditions": " الشروط والأحكام",
   "and": " و",
   "privacy_policy": ".سياسة الخصوصية",
+  "sign_up": "إنشاء حساب",
   "already_have_an_account": "لديك حساب بالفعل؟",
-  "sign_up": "إنشاء حساب"
+  "sign_in": "تسجيل الدخول",
+  "no_account": "ليس لديك حساب؟",
+  "create_account": "إنشاء حساب",
+  "signup_description": "سجّل الآن وابدأ في استكشاف كل ما يقدمه تطبيقنا. نحن متحمسون للترحيب بك في مجتمعنا!",
+  "phone_number": "رقمك",
+  "security_message": "في تطبيقنا، نأخذ أمان معلوماتك على محمل الجد.",
+  "email_or_phone": "البريد الإلكتروني أو رقم الهاتف",
+  "reset_password": "إعادة تعيين كلمة المرور"
 }
