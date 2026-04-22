@@ -1,6 +1,6 @@
 import '../../../core/theme/app_colors.dart';
-import '../../../helpers/constants/app_svgs.dart';
-import '../../../helpers/extensions/extensions.dart';
+import '../../../core/helpers/constants/app_svgs.dart';
+import '../../../core/helpers/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

@@ -7,7 +7,7 @@ import '../../../../../core/theme/app_colors.dart';
 import '../../../../../core/widget/default_auth_header.dart';
 import '../../../../../core/widget/default_primary_btn.dart';
 import '../../../../../core/widget/default_text_form_field.dart';
-import '../../../../../helpers/extensions/extensions.dart';
+import '../../../../../core/helpers/extensions/extensions.dart';
 import '../widget/auth_rich_text_widget.dart';
 import '../widget/forgot_password_widget.dart';
 import '../widget/terms_and_privacy_widget.dart';

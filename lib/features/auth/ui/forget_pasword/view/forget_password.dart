@@ -3,7 +3,7 @@ import 'package:docdoc_app/core/theme/app_colors.dart';
 import 'package:docdoc_app/core/widget/default_auth_header.dart';
 import 'package:docdoc_app/core/widget/default_primary_btn.dart';
 import 'package:docdoc_app/core/widget/default_text_form_field.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import 'package:docdoc_app/core/helpers/extensions/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
