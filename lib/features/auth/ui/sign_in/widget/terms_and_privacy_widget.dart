@@ -1,5 +1,5 @@
 import '../../../../../core/theme/app_colors.dart';
-import '../../../../../helpers/extensions/extensions.dart';
+import '../../../../../core/helpers/extensions/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

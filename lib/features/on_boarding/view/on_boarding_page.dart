@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_colors.dart';
 import '../../../core/widget/default_primary_btn.dart';
-import '../../../helpers/extensions/extensions.dart';
+import '../../../core/helpers/extensions/extensions.dart';
 import '../widget/appbar_logo_widget.dart';
 import '../widget/image_and_title_widget.dart';
 

@@ -6,7 +6,7 @@ import 'package:docdoc_app/core/widget/default_primary_btn.dart';
 import 'package:docdoc_app/core/widget/default_text_form_field.dart';
 import 'package:docdoc_app/features/auth/ui/sign_in/widget/auth_rich_text_widget.dart';
 import 'package:docdoc_app/features/auth/ui/sign_in/widget/terms_and_privacy_widget.dart';
-import 'package:docdoc_app/helpers/extensions/extensions.dart';
+import 'package:docdoc_app/core/helpers/extensions/extensions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
